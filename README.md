@@ -135,3 +135,174 @@ JEE, NEET and Competitive Exams.
 
 </body>
 </html>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7ff;
+color:#333;
+}
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#0B5ED7;
+color:white;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+.btn{
+background:white;
+padding:10px 20px;
+color:#0B5ED7;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0B5ED7,#6EA8FE);
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:yellow;
+}
+
+.hero p{
+margin:20px;
+font-size:20px;
+}
+
+.hero-btn{
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:#0B5ED7;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+}
+
+.courses{
+padding:80px 10%;
+text-align:center;
+}
+
+.course-container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.about{
+padding:80px 10%;
+background:white;
+text-align:center;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.features div{
+background:#0B5ED7;
+padding:30px;
+color:white;
+border-radius:10px;
+}
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+form{
+max-width:600px;
+margin:auto;
+}
+
+input,textarea{
+
+width:100%;
+padding:15px;
+margin:15px 0;
+border:1px solid #ddd;
+border-radius:5px;
+
+}
+
+button{
+
+padding:15px 35px;
+background:#0B5ED7;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
