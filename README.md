@@ -306,3 +306,12 @@ color:white;
 text-align:center;
 padding:25px;
 }
+document.querySelector("form").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert("Thank you for contacting Next Toppers!");
+
+this.reset();
+
+});
