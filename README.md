@@ -315,3 +315,397 @@ alert("Thank you for contacting Next Toppers!");
 this.reset();
 
 });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next Toppers | Student Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+display:flex;
+background:#f4f7fb;
+transition:.3s;
+}
+
+.sidebar{
+width:250px;
+background:#0b5ed7;
+height:100vh;
+color:white;
+padding:20px;
+position:fixed;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+margin-bottom:30px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+padding:15px;
+margin:8px 0;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+.sidebar li:hover{
+background:rgba(255,255,255,.2);
+}
+
+.main{
+margin-left:250px;
+width:100%;
+padding:30px;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+button{
+padding:10px 18px;
+border:none;
+background:#0b5ed7;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.progress{
+background:#ddd;
+height:10px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress div{
+height:100%;
+background:#0b5ed7;
+width:75%;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+table td,table th{
+padding:10px;
+border-bottom:1px solid #ddd;
+text-align:left;
+}
+
+.notice{
+padding:10px;
+background:#eaf4ff;
+margin:10px 0;
+border-left:5px solid #0b5ed7;
+}
+
+.dark{
+background:#111827;
+color:white;
+}
+
+.dark .card{
+background:#1f2937;
+color:white;
+}
+
+.dark table td,
+.dark table th{
+border-color:#333;
+}
+
+.dark .notice{
+background:#2d3748;
+}
+
+@media(max-width:900px){
+
+.sidebar{
+width:70px;
+}
+
+.sidebar .logo{
+font-size:18px;
+}
+
+.sidebar li{
+font-size:12px;
+padding:10px;
+}
+
+.main{
+margin-left:70px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+Next Toppers
+</div>
+
+<ul>
+
+<li>🏠 Dashboard</li>
+<li>📚 My Courses</li>
+<li>🎥 Live Classes</li>
+<li>📝 Assignments</li>
+<li>📄 Notes</li>
+<li>📊 Results</li>
+<li>💬 Doubts</li>
+<li>⚙ Settings</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="topbar">
+
+<div>
+<h1>Welcome, Ashish 👋</h1>
+<p>Student Dashboard</p>
+</div>
+
+<button onclick="darkMode()">
+Dark Mode
+</button>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Student Profile</h3>
+
+<p><b>Name:</b> Ashish Baghel</p>
+
+<p><b>Class:</b> 12</p>
+
+<p><b>Course:</b> JEE Advanced</p>
+
+<p><b>Roll No:</b> NT1025</p>
+
+</div>
+
+<div class="card">
+
+<h3>Course Progress</h3>
+
+<div class="progress">
+
+<div></div>
+
+</div>
+
+<br>
+
+75% Completed
+
+</div>
+
+<div class="card">
+
+<h3>Upcoming Live Class</h3>
+
+Physics
+
+<br><br>
+
+7:00 PM
+
+<br><br>
+
+<button>Join Now</button>
+
+</div>
+
+<div class="card">
+
+<h3>Attendance</h3>
+
+92%
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Assignments</h3>
+
+<table>
+
+<tr>
+
+<th>Subject</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Physics</td>
+
+<td>Completed</td>
+
+</tr>
+
+<tr>
+
+<td>Chemistry</td>
+
+<td>Pending</td>
+
+</tr>
+
+<tr>
+
+<td>Maths</td>
+
+<td>Completed</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h3>Latest Results</h3>
+
+<table>
+
+<tr>
+
+<th>Test</th>
+
+<th>Marks</th>
+
+</tr>
+
+<tr>
+
+<td>Physics</td>
+
+<td>95/100</td>
+
+</tr>
+
+<tr>
+
+<td>Chemistry</td>
+
+<td>92/100</td>
+
+</tr>
+
+<tr>
+
+<td>Maths</td>
+
+<td>97/100</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3>Notifications</h3>
+
+<div class="notice">
+
+Physics Live Class starts today at 7 PM.
+
+</div>
+
+<div class="notice">
+
+New Mathematics Notes Uploaded.
+
+</div>
+
+<div class="notice">
+
+JEE Mock Test available now.
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+</script>
+
+</body>
+</html>
